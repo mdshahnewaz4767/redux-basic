@@ -17,7 +17,7 @@ const Shop = (props) => {
 };
 
 
-const mapStateToShop = state => {
+const mapStateToProps = state => {
     return {
         cart: state.cart, 
         products: state.products
@@ -27,11 +27,11 @@ const mapDispatchToProps = {
     addToCart: addToCart
 }
 
-// const connectToStore = connect(mapStateToShop, mapDispatchToProps);
-// connectToStore(Shop);
+// const connectToStore = connect(mapStateToProps, mapDispatchToProps);
+// connectToStore(Props);
 
 //another way
-connect(mapStateToShop, mapDispatchToProps)(Shop);
+// connect(mapStateToProps, mapDispatchToProps)(Shop);
 
 
-export default connect(mapStateToShop, mapDispatchToProps)(Shop);
+export default connect(mapStateToProps, mapDispatchToProps)(Shop);

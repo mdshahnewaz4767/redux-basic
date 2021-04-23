@@ -6,6 +6,7 @@ import Product from '../Product/Product';
 
 const Shop = (props) => {
     const {products, addToCart} = props;
+    console.log(props);
     return (
         <div>
             <h4>This is Shop</h4>
